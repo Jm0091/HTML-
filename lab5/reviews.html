@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+	
+	<style>
+		form {
+			margin-left: 10%;
+			margin-right: 10%;
+		}
+		
+		h2 {
+			text-align: center;
+		}
+		
+		body {
+			background-image: url(imgaes/p6.jpg);
+			color: oldlace;
+			font-size: 1.1em;
+		}
+		
+		.bkclr {
+			
+		}
+		
+		.button {
+			font-weight: bold;
+			border: black;
+			border-radius: 10px;
+			padding: 8px;
+		}
+		
+		#center {
+			text-align: center;
+			border-bottom: 1px solid black;
+		}
+		
+		nav ol{
+				margin-top:0px;
+				text-align:center;
+				height:30px;
+				padding-top:10px;
+				
+			}
+			
+		nav li {
+				text-align:center;
+				padding: 8px;
+				display: inline;
+				list-style-type: none;
+				border-right:2px solid black;
+				border-top:2px solid black;
+				border-left:2px solid black;
+				border-radius:0 10px 0 0;
+				transform: rotate(-180deg);
+				margin: 0 15px 0 0;
+				margin-bottom: 0px;
+			}
+		
+	</style>
+</head>
+
+
+<body>
+
+	
+	<h2>Fall 2019 Reviews<h2>
+	<nav class="h3">
+		<ol>
+			<li><a href="reviews.html">Reviews</a></li>
+			<li><a href="seminars.html">Seminars</a></li>
+			
+		</ol>
+	</nav>
+	
+	 <form method="POST"
+				   name="regForm"
+				   action="https://csunix.mohawkcollege.ca/tooltime/showit.pl" method="get" target="blank">
+				<fieldset class="alignfields">
+				
+					<p>I Usually perfer to trips this time of year (select all that apply):</p>
+					
+					<select multiple="true">
+						<option value = "1">Winter</option>
+						<option value = "2">Spring</option>
+						<option value = "3">Summer</option>
+						<option value = "5">Fall</option>
+							
+					</select><br>
+					<br>
+					
+					
+					<legend>&nbsp;&nbsp;&nbsp;About You (optional)&nbsp;&nbsp;&nbsp;</legend>
+					<label>First Name: </label>
+					<input type="text" name="firstName" value="" class="bkclr"><br><br>
+					<label >Last Name: </label>
+					<input type="text" name="lastName" value="" class="bkclr"><br><br>
+					<label >Phone Number: </label>
+					<input type="text" name="phoneNumber" value="" class="bkclr"><br><br>
+					<label >Email Address: </label>
+					<input type="email" name="e-mail" value="" class="bkclr"><br><br>
+				</fieldset><br><br>
+				
+				<fieldset>
+					<legend>&nbsp;&nbsp;&nbsp;Trip Reviews&nbsp;&nbsp;&nbsp;</legend>
+					<select>
+						<option value = "1">Alberta Rural</option>
+						<option value = "2">B.C. Coast</option>
+						<option value = "3">Ontario Lake Superior</option>
+						<oPtion value = "4">PEI</option>
+						<option value="Nova Scotia Cabot Trail" selected>Nova Scotia Cabot Trail</option>
+					</select>
+					<select>
+						<option value="5 Days" selected>5 Days</option>
+						<option value = "2">7 Days</option>
+						<option value = "3">10 Days</option>
+						<option value = "4">14 Days</option>
+					</select>
+					
+					<label for = "Rating" class="ym">Your Rating:</label><br>
+					
+					<input type = "radio" name = "Rating" value = "4 Stars" class="ym" /><img src="imgaes/wheel_sm.jpg" alt="rate"/><img src="imgaes/wheel_sm.jpg" alt="rate"/><img src="imgaes/wheel_sm.jpg" alt="rate"/><img src="imgaes/wheel_sm.jpg" alt="rate"/><br>
+					<input type = "radio" name = "Rating" value = "3 Stars" class="ym" /><img src="imgaes/wheel_sm.jpg" alt="rate"/><img src="imgaes/wheel_sm.jpg" alt="rate"/><img src="imgaes/wheel_sm.jpg" alt="rate"/><br>
+					<input type = "radio" name = "Rating" value = "2 Stars" class="ym" /><img src="imgaes/wheel_sm.jpg" alt="rate"/><img src="imgaes/wheel_sm.jpg" alt="rate"/><br>
+					<input type = "radio" name = "Rating" value = "1 Stars" class="ym" /><img src="imgaes/wheel_sm.jpg" alt="rate"/><br>
+					<br>
+					
+					<legend>&nbsp;&nbsp;&nbsp;Comments:&nbsp;&nbsp;&nbsp;</legend>
+						<textarea name="questions" rows="5" cols="60" class="bkclr">Please enter your comments here</textarea>
+						
+						
+				</fieldset><br><br>
+							
+				<fieldset>
+					<legend>&nbsp;&nbsp;&nbsp;I would be intrested in these trips:(check all that apply)&nbsp;&nbsp;&nbsp;</legend>
+					
+					<input type="checkbox" name="tseas" value="Sea or Lake Coast" id="sea">
+					<label for="sea">Sea or Lake Coast</label> <br>
+					<input type="checkbox" name="trural" value="Rural" id="rur">
+					<label for="rur">Rural</label> <br>
+					<input type="checkbox" name="tmountains" value="Mountains" id="moun" checked>
+					<label for="moun">Mountains</label> <br>
+					<input type="checkbox" name="other" value="other (please specify)" id="othe">
+					<label for="othe">Other (please specify)</label>
+					<input type="text" name="other" value="" class="bkclr">	<br>
+					
+				</fieldset><br><br>
+							
+				<input type="submit" name="sendButton" value="Send Review"  class="button">
+				&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="reset" name="cancelButton" value="Cancel"  class="button">		
+			 </form>
+
+</body>
+
+</html>

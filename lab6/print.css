@@ -1,0 +1,10 @@
+/* print.cssfloorPlan  -- Author: Jems Chaudhary, 000814314  */ 
+#floorPlan{
+	display:none;
+}
+nav{
+	display:none;
+}
+@page{
+	size: 8.5in 11in;
+}
